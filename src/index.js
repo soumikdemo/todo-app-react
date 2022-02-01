@@ -1,11 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
-import TodoContainer from "./components/TodoContainer";
+import TodoContainer from "./functionBased/components/TodoContainer";
 
 //stylesheet
-import './index.css';
-import './App.css';
+import './functionBased/App.css';
 
 
 //component file
