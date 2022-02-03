@@ -4,7 +4,7 @@ import { Route, Routes} from "react-router-dom"
 import Header from "./Header"
 import InputTodo from "./InputTodo"
 import TodosList from "./TodosList"
-import Navbar from "./Navbar"
+import NavbarComp from "./NavbarComp"
 import About from "../pages/About"
 import NotMatch from "../pages/NotMatch"
 
@@ -89,7 +89,7 @@ const TodoContainer = () => {
   return (
     //Notice we are wrapping everything in a react fragment
     <>
-      <Navbar />
+      <NavbarComp />
       <Routes>
         <Route path="/" element={
           <div className="container">

@@ -65,12 +65,13 @@ body {
 }
 
 .active-link {
-  display: "block";
   margin: "1rem 0";
   color: "red";
   text-decoration: underline;
 }
 
 .navBar {
-
+  display: 'block'; 
+  width: 700; 
+  padding-left: 30px;
 }

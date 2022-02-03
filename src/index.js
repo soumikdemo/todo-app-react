@@ -5,6 +5,7 @@ import TodoContainer from "./functionBased/components/TodoContainer";
 
 //stylesheet
 import './functionBased/App.css';
+import 'rsuite/dist/rsuite.min.css';
 
 
 //component file

@@ -1,5 +1,7 @@
 import React from "react"
 import { NavLink, Outlet } from "react-router-dom"
+import { Navbar, Nav } from 'rsuite';
+//import "rsuite/dist/styles/rsuite-default.css";
 
 const links = [
     {
@@ -14,17 +16,20 @@ const links = [
     },
   ]
 
-const Navbar = () => {
+const NavbarComp = () => {
   return (
     <>
         <nav className="navBar">
-            <ul>
+            <ul style={{ listStyleType:"none" }}>
             {links.map(link => {
                 return (
                     <li key={link.id}>
-                        <NavLink to={link.path} className={({isActive}) => isActive ? "active-link" : "" }> 
+                        <Nav appearance="subtle">
+                            <Nav.Item href={link.path} >{link.text}</Nav.Item>
+                        </Nav>
+                        {/* <NavLink to={link.path} className={({isActive}) => isActive ? "active-link" : "" }> 
                             {link.text}
-                        </NavLink>        
+                        </NavLink> */}        
                     </li>
                 )
             })}
@@ -35,4 +40,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default NavbarComp
